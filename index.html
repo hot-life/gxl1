@@ -52,6 +52,11 @@
             let dianZanShu = parseInt(btnNum.innerText);
             let newNum = dianZanShu + 1;
             btnNum.innerText = newNum;
+            window.localStorage.setItem("dianjishu", newNum); //将点赞数保存到本地文件
+          }
+          let data = window.localStorage.getItem("dianjishu");
+          if (data) {
+            btn.innerText = data; //直接改标签，如果用“btnNum”会导致不能检测到，因为“btnNum”是在“dianzan()”函数的定义里的！！！！
           }
         </script>
       </div>
