@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <title>出发页</title>
-<head style="padding: 40px">
-  <div
-    style="
-      text-align: center;
-      padding: 40px;
-      background: rgba(168, 168, 168, 0.847);
-    "
-  >
-    <img
-      src="http://img.aigexing.com/uploads/9/1253/3723590354/93720393451/5298729.jpg"
-      alt="风景"
-      width="60px"
-      height="60px"
-    />
-    <p>欢迎光临甘昕乐的网站！！！我已经开始学习啦！</p>
-  </div>
+<head>
+  <style>
+    .search-form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;
+    }
+    .search-input {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      transition: box-shadow 0.3s ease;
+    }
+    .search-input:focus {
+      outline: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .search-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .search-button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
-<style>
-  a:hover {
-    background-color: rgb(87, 149, 164);
-  }
-</style>
 <body>
+  <div class="search-form">
+    <form action="https://www.bing.com/search" class="search-form">
+      <input
+        class="search-input"
+        type="search"
+        name="q"
+        placeholder="想看看什么鸭..."
+      />
+      <button class="search-button" type="submit">出发</button>
+    </form>
+  </div>
   <style>
     .flex {
       display: flex;

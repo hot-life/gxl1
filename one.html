@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <title>工具</title>
-<head style="padding: 40px">
-  <style>
-    a:hover {
-      background-color: rgb(37, 70, 71);
+<style>
+  /* CSS样式 */
+  @keyframes backgroundAnimation {
+    0% {
+      background-color: #ffc0cb; /* 起始颜色为粉色 */
+    }
+    50% {
+      background-color: #87ceeb; /* 中间颜色为天蓝色 */
+    }
+    100% {
+      background-color: #ffc0cb; /* 结束颜色为粉色 */
+    }
+  }
+   body {
+        animation: backgroundAnimation 6s infinite; /* 6秒的动画循环 */
     }
   </style>
   <body>
